@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Teacher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+   
+    <section class="flex">
+ 
+       <a href="#" class="logo">FW.</a>
+ 
+       <div class="links">
+          <a href="index.html">Home</a>
+          <a href="course.html">Courses</a>
+          <a href="student.html">student</a>
+          <a href="teacher.html">teacher</a>
+          <a href="contact.html">contact us</a>
+       </div>
+ 
+       <div class="icons">
+          <div id="user-btn" class="fas fa-user"></div>
+       </div>
+ 
+       <div class="profile">
+          <img src="images/pic-1.jpg" class="image">
+          <h3 class="name">Sasithatan</h3>
+          <p class="role">student</p>
+          <a href="profile.html" class="btn">view profile</a>
+          <div class="flex-btn">
+             <a href="login.html" class="option-btn">login</a>
+             <a href="register.html" class="option-btn">register</a>
+          </div>
+       </div>
+ 
+    </section>
+ 
+ </header>
+  <!-- Swiper -->
+  <div class="teachers">
+    <div class="heading">expert tutors</div>
+    <div class="swiper teachers-slider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+          <img src="images/tea ai1.jpg">
+          <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+          <h3>Harish</h3>
+        </div>
+        <div class="swiper-slide slide">
+          <img src="images/tea ai2.jpg">
+          <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+          <h3>Harish</h3>
+        </div>
+        <div class="swiper-slide slide">
+          <img src="images/tea ai3.jpg">
+          <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+          <h3>Harish</h3>
+        </div>
+        <div class="swiper-slide slide">
+          <img src="images/tea ai2.jpg">
+          <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+          <h3>Harish</h3>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".teachers-slider", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
